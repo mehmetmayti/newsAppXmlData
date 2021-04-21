@@ -1,0 +1,10 @@
+C:\Users\Mehmet\Desktop\Dersler\NTP2\newsAppXmlData\newsAppXmlData\bin\Debug\newsAppXmlData.exe.config
+C:\Users\Mehmet\Desktop\Dersler\NTP2\newsAppXmlData\newsAppXmlData\bin\Debug\newsAppXmlData.exe
+C:\Users\Mehmet\Desktop\Dersler\NTP2\newsAppXmlData\newsAppXmlData\bin\Debug\newsAppXmlData.pdb
+C:\Users\Mehmet\Desktop\Dersler\NTP2\newsAppXmlData\newsAppXmlData\obj\Debug\newsAppXmlData.csprojAssemblyReference.cache
+C:\Users\Mehmet\Desktop\Dersler\NTP2\newsAppXmlData\newsAppXmlData\obj\Debug\newsAppXmlData.Form1.resources
+C:\Users\Mehmet\Desktop\Dersler\NTP2\newsAppXmlData\newsAppXmlData\obj\Debug\newsAppXmlData.Properties.Resources.resources
+C:\Users\Mehmet\Desktop\Dersler\NTP2\newsAppXmlData\newsAppXmlData\obj\Debug\newsAppXmlData.csproj.GenerateResource.cache
+C:\Users\Mehmet\Desktop\Dersler\NTP2\newsAppXmlData\newsAppXmlData\obj\Debug\newsAppXmlData.csproj.CoreCompileInputs.cache
+C:\Users\Mehmet\Desktop\Dersler\NTP2\newsAppXmlData\newsAppXmlData\obj\Debug\newsAppXmlData.exe
+C:\Users\Mehmet\Desktop\Dersler\NTP2\newsAppXmlData\newsAppXmlData\obj\Debug\newsAppXmlData.pdb
