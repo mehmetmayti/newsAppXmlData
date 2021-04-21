@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,7 +21,21 @@ namespace newsAppXmlData
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            servic.getAllLastNews();
+            var list =servic.getAllLastNews();
+            pictureBox3.ImageLocation = list[0].imageUrl;
+            lblTitle.Text = list[0].newstitle;
+            lblDate.Text = list[0].newsPubDate.ToString();
+            linkLabel1.AccessibleDescription = list[0].newsLink;
+            linkLabel1.LinkClicked += LinkLabel1_LinkClicked;
+
         }
+
+        private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var link = sender as LinkLabel;
+            Process.Start(link.AccessibleDescription);
+        }
+
+        
     }
 }

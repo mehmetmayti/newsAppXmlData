@@ -31,8 +31,8 @@ namespace newsAppXmlData
 
             }
 
-
-            return null;
+            
+            return listNews;
         }
 
 
