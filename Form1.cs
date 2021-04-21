@@ -22,18 +22,16 @@ namespace newsAppXmlData
         private void Form1_Load(object sender, EventArgs e)
         {
             var list =servic.getAllLastNews();
-            pictureBox3.ImageLocation = list[0].imageUrl;
-            lblTitle.Text = list[0].newstitle;
-            lblDate.Text = list[0].newsPubDate.ToString();
-            linkLabel1.AccessibleDescription = list[0].newsLink;
-            linkLabel1.LinkClicked += LinkLabel1_LinkClicked;
 
-        }
+            foreach (var item in list)
+            {
+                Component comp = new Component(item);
+                comp.cahngeComp();
+                Panel panel = comp.getComp();
 
-        private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            var link = sender as LinkLabel;
-            Process.Start(link.AccessibleDescription);
+                flowLayoutPanel1.Controls.Add(panel);
+            }
+
         }
 
         
