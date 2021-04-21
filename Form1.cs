@@ -14,6 +14,7 @@ namespace newsAppXmlData
     public partial class Form1 : Form
     {
         Services servic = new Services();
+        List<DataModel> list;
         public Form1()
         {
             InitializeComponent();
@@ -21,7 +22,13 @@ namespace newsAppXmlData
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            var list =servic.getAllLastNews();
+            getNews();
+            timer1.Start();
+        }
+        
+        void getNews()
+        {
+            list = servic.getAllLastNews();
 
             foreach (var item in list)
             {
@@ -31,9 +38,33 @@ namespace newsAppXmlData
 
                 flowLayoutPanel1.Controls.Add(panel);
             }
+        }
+
+        void newsControl() 
+        {
+            var kontrolList = servic.getAllLastNews();
+
+            if (kontrolList==list)
+            {
+                return;
+            }
+            else
+            {
+                list = kontrolList;
+                button1.Visible = true;
+            }
 
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            getNews();
+            button1.Visible = false;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            newsControl();
+        }
     }
 }

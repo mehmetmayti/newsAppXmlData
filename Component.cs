@@ -78,7 +78,7 @@ namespace newsAppXmlData
             this.title.Name = "lblTitle";
             this.title.Size = new System.Drawing.Size(46, 20);
             this.title.TabIndex = 0;
-            this.title.Text = data.newstitle;
+            this.title.Text = data.newstitle+"...";
 
             // PictureBox
             
